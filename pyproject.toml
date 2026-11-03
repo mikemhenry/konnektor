@@ -32,13 +32,14 @@ classifiers = [
 ]
 dynamic = [ "version" ]
 dependencies = [
-  "gufe",
+  "gufe >=1,<2",
   "ipycytoscape",
+  "matplotlib",
   "networkx",
   "numpy",
   "rdkit",
   "scikit-learn",
-  "scikit-mol",
+  "scikit-mol >=0.5.5",  # https://github.com/EBjerrum/scikit-mol/pull/68
   "tqdm",
 ]
 optional-dependencies.dev = [
@@ -46,7 +47,7 @@ optional-dependencies.dev = [
 ]
 optional-dependencies.test = [
   "pytest",
-  "pytest-cov[all]",
+  "pytest-cov",
 ]
 urls.Homepage = "https://github.com/OpenFreeEnergy/konnektor"
 
